@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+
+        background-image: linear-gradient(to top, #232F4A,#1F3F8A, #6B96FA);
+
+    }
+
+    section#login {
+
+    width: 90vw;
+    
+    }
+
+    section#login > div#imagem {
+
+        float: left;
+        width: 30%;
+        height: 100%;
+
+    }
+
+    section#login > div#formulario {
+
+        float: right;
+        width: 70%;
+
+    }
+
+    div#formulario > h1 {
+
+        font-size: 2em;
+    
+    }
+
+    div#formulario > p {
+
+        font-size: 1.2em;
+    
+    }
+
+    form > input[type=submit] {
+
+        width: 300px;
+        margin: auto;
+
+    }
+
+    form > a.botao {
+
+        width: 300px;
+        margin: auto;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+
+        background-image: linear-gradient(to top, #232F4A,#1F3F8A, #6B96FA);
+
+    }
+
+    section#login {
+
+        width: 960px;
+    }
+
+    section#login > div#imagem {
+
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+
+        float: right;
+        width: 50%;
+    }
+}
+
