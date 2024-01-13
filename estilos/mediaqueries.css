@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* CONFIGURAÇÃO PARA TABLET */
 
     body {
 
@@ -11,6 +11,7 @@
     section#login {
 
     width: 90vw;
+    height: 390px;
     
     }
 
@@ -37,14 +38,14 @@
 
     div#formulario > p {
 
-        font-size: 1.2em;
+        font-size: 1.1em;
     
     }
 
     form > input[type=submit] {
 
         width: 300px;
-        margin: auto;
+        margin: 60px auto 10px auto;
 
     }
 
@@ -54,9 +55,16 @@
         margin: auto;
 
     }
+
+    a > p{
+        
+        display: inline-block;
+        transform: translateY(-7px)
+    }
+
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* CONFIGURAÇÃO PARA TELAS GRANDES */
 
     body {
 
@@ -67,6 +75,7 @@
     section#login {
 
         width: 960px;
+        height: 400px;
     }
 
     section#login > div#imagem {
@@ -81,5 +90,37 @@
         float: right;
         width: 50%;
     }
+
+    div#formulario > h1 {
+
+        font-size: 2em;
+    
+    }
+
+    div#formulario > p {
+
+        font-size: 1.1em;
+    
+    }
+
+    form > input[type=submit] {
+
+        width: 300px;
+        margin: 60px auto 10px auto;
+
+    }
+
+    form > a.botao {
+
+        width: 300px;
+        margin: auto;
+
+    }
+
+    a > p{
+        display: inline-block;
+        transform: translateY(-7px)
+    }
+
 }
 

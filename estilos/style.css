@@ -8,6 +8,8 @@
 
 */
 
+/* MOBILE FIRST */
+
 * {
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -40,15 +42,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 516px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
 
@@ -85,16 +87,42 @@ div#formulario > p {
 form > div.campo {
 
     background-color: #3263d4;
+    border: 2px solid #3263d4;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
 
     display: none;
+}
+
+div.campo > i {
+
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+
+    background-color: #cedbf8;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+
+    background-color: white;
+
 }
 
 .material-symbols-outlined {
@@ -150,3 +178,9 @@ form > a.botao:hover {
     background-color: #1F3F8A;
 
 }
+
+a > p{
+    display: inline-block;
+    transform: translateY(-7px)
+}
+
